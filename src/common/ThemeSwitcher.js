@@ -1,5 +1,5 @@
 import React from 'react';
-import { InputContainer, Input, InputLabelContainer, InputNumber } from './components/calculator/ThemeSwitcher.styled';
+import { InputContainer, Input, InputLabelContainer, InputNumber } from './ThemeSwitcher.styled';
 import { withTheme } from 'styled-components';
 
 const ThemeSwitcher = (props) => {

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Calculator from './components/calculator/Calculator';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyles } from './global';
+import { GlobalStyles } from './common/global';
 import { darkBlue, lightGray, violet } from './theme';
 
 const themes = { darkBlue, lightGray, violet};

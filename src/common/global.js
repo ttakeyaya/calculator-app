@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
-import { fadein } from "./modules/animation";
+import { fadein } from "./animation";
 
 export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
   *,
   *::after,
   *::before{
@@ -21,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
     align-items: center;
     margin:0;
     padding:0;
+    font-family: 'Spartan', sans-serif;
     background:${({theme}) => theme.mainbg};
     animation:${fadein} 1s ease 0s normal;
   }
