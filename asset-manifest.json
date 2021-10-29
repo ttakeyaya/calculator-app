@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/ttakeyaya/calculator-app/static/js/main.4eb2a959.chunk.js",
-    "main.js.map": "/ttakeyaya/calculator-app/static/js/main.4eb2a959.chunk.js.map",
-    "runtime-main.js": "/ttakeyaya/calculator-app/static/js/runtime-main.9c5abcb0.js",
-    "runtime-main.js.map": "/ttakeyaya/calculator-app/static/js/runtime-main.9c5abcb0.js.map",
-    "static/js/2.cc972b59.chunk.js": "/ttakeyaya/calculator-app/static/js/2.cc972b59.chunk.js",
-    "static/js/2.cc972b59.chunk.js.map": "/ttakeyaya/calculator-app/static/js/2.cc972b59.chunk.js.map",
-    "index.html": "/ttakeyaya/calculator-app/index.html",
-    "static/js/2.cc972b59.chunk.js.LICENSE.txt": "/ttakeyaya/calculator-app/static/js/2.cc972b59.chunk.js.LICENSE.txt"
+    "main.js": "/calculator-app/static/js/main.4eb2a959.chunk.js",
+    "main.js.map": "/calculator-app/static/js/main.4eb2a959.chunk.js.map",
+    "runtime-main.js": "/calculator-app/static/js/runtime-main.15d84731.js",
+    "runtime-main.js.map": "/calculator-app/static/js/runtime-main.15d84731.js.map",
+    "static/js/2.355f960e.chunk.js": "/calculator-app/static/js/2.355f960e.chunk.js",
+    "static/js/2.355f960e.chunk.js.map": "/calculator-app/static/js/2.355f960e.chunk.js.map",
+    "index.html": "/calculator-app/index.html",
+    "static/js/2.355f960e.chunk.js.LICENSE.txt": "/calculator-app/static/js/2.355f960e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9c5abcb0.js",
-    "static/js/2.cc972b59.chunk.js",
+    "static/js/runtime-main.15d84731.js",
+    "static/js/2.355f960e.chunk.js",
     "static/js/main.4eb2a959.chunk.js"
   ]
 }
