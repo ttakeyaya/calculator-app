@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import { withTheme } from 'styled-components';
-// import { Button } from './Button';
-import { Title, CalcContainer, TitleContainer, ResultContainer, ButtonsContainer } from './Calculator.styled';
+import { Title, CalcContainer, TitleContainer, ResultContainer, ButtonsContainer, ThemeContainer, ThemeTitle } from './Calculator.styled';
 import { Button } from './Button.styled';
+import ThemeSwitcher from '../../ThemeSwitcher';
 
 const Calculator = (props) =>{
-  console.log('Current theme: ', props.theme );
   const classNameAndNums = {
     one: 1,
     two: 2,
@@ -26,7 +25,7 @@ const Calculator = (props) =>{
     del: "DEL",
     equal: "="
   };
-
+  const [result, setResult] = useState(0);
   const [total, setTotal] = useState(0);
   const [number, setNumber] = useState('0');
   const [operation, setOperation] = useState(null);
@@ -101,28 +100,38 @@ const Calculator = (props) =>{
     }
   }
 
+  // Create styled buttons
   const buttons = Object.entries(classNameAndNums).map(([key,value])=>{
     if(key === "del" || key === "reset"){
-      return <Button gridName={key} color={props.theme.white} bgColor={props.theme.graytext}>{value}</Button>
+      return <Button 
+                gridName={key}
+                color={"white"}
+                bg={props.theme.keyone} 
+                bgshadow={props.theme.keyoneshadow} 
+                className={key} 
+                font={20} 
+                hover={props.theme.keythreehover}
+                onClick={() => onClickHandler(value)}>
+                  {value}
+              </Button>
     }else if(key ==="equal"){
-      return <Button gridName={key} color={props.theme.white} bgColor={props.theme.keyred}>{value}</Button>
+      return <Button gridName={key} color={props.theme.texttwo} bg={props.theme.keytwo} bgshadow={props.theme.keytwoshadow} className={key} hover={props.theme.keytwohover} onClick={() => onClickHandler(value)}>{value}</Button>
     }
-      return <Button gridName={key}>{value}</Button>
+      return <Button gridName={key} color={props.theme.textone} bg={props.theme.keythree} bgshadow={props.theme.keythreeshadow} className={key} hover={props.theme.keyonehover}onClick={() => onClickHandler(value)}>{value}</Button>
     }
   );
 
   return(
     <CalcContainer>
       <TitleContainer>
-        <Title>Calc</Title>
-        <div>
-          <input type="radio" name="name" />
-          <input type="radio" name="name" />
-          <input type="radio" name="name" />
-        </div>
+        <Title>calc</Title>
+        <ThemeContainer>
+          <ThemeTitle>theme</ThemeTitle>
+          <ThemeSwitcher click={props.click}/>
+        </ThemeContainer>
       </TitleContainer>
       <ResultContainer>
-        {total}
+        {number === '0' ? total : number}
       </ResultContainer>
       <ButtonsContainer
         areas={[
