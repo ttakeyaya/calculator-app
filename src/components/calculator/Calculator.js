@@ -92,7 +92,7 @@ const Calculator = (props) =>{
       setTotal(parseFloat(total + currentNumber));
     }else if(operation === '-'){
       setTotal(parseFloat(total - currentNumber));
-    }else if(operation ==='x'){
+    }else if(operation ==='×'){
       setTotal(parseFloat(total*currentNumber));
     }else if(operation === '/'){
       setTotal(parseFloat(total/currentNumber));
