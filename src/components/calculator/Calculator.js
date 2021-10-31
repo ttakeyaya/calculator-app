@@ -4,24 +4,25 @@ import { Title, CalcContainer, TitleContainer, ResultContainer, ButtonsContainer
 import ThemeSwitcher from '../../common/ThemeSwitcher';
 
 const Calculator = (props) =>{
+  // order the buttons. This matches the order on the screen.
   const classNameAndNums = {
-    one: 1,
-    two: 2,
-    three: 3,
-    four:4,
-    five: 5,
-    six: 6,
     seven: 7,
     eight: 8,
     nine: 9,
-    zero: 0,
-    dot: ".",
+    del: "DEL",
+    four:4,
+    five: 5,
+    six: 6,
     plus: "+",
+    one: 1,
+    two: 2,
+    three: 3,
     minus: "-",
+    dot: ".",
+    zero: 0,
+    divide: "/",
     times: "×",
     reset: "RESET",
-    divide: "/",
-    del: "DEL",
     equal: "="
   };
 
